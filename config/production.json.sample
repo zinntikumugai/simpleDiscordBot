@@ -1,0 +1,51 @@
+{
+    "Discord": {
+        "token": "",
+        "reply": {
+            "prefix": ",",
+            "enableMention": true
+        },
+        "debug": {
+            "noReply": false,
+            "emulateReply": true
+        },
+        "masterUser": [
+            "246834514146361345"
+        ],
+        "unavailableChannelIds": [
+            
+        ],
+        "availableChannelIds": [
+
+        ]
+    },
+    "log4js": {
+        "level": "ALL",
+        "configure": {
+            "appenders": {
+                "system": {
+                    "type": "console"
+                },
+                "access": {
+                    "type": "file",
+                    "filename": "logs/access.log"
+                },
+                "error": {
+                    "type": "file",
+                    "filename": "logs/error.log"
+                }
+            },
+            "categories": {
+                "default": {
+                    "appenders": [
+                        "system",
+                        "access",
+                        "error"
+                    ],
+                    "level": "ALL"
+                }
+            },
+            "replaceConsole": true
+        }
+    }
+}
